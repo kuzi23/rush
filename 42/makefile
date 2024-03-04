@@ -19,4 +19,13 @@ LIBRARY = libft.a
 
 all: $(LIBRARY)
 
-$(LIBRARY): 
+$(LIBRARY): $(OBJ)
+	ar rcs $(LIBRARY) $(OBJ)
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean 
+	rm -f $(LIBRARY)
+
+re: fclean all
