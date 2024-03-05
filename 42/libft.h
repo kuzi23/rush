@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:18:30 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/05 11:35:13 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/05 15:22:44 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,12 @@ void	*ft_calloc(size_t num_elements, size_t element_size);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strdup(const char *s1);
 void	*ft_memcpy(void *dst, const void *s1, size_t n);
+char	*ft_strdup(const char *s1);
+void	*ft_memcpy(void *dst, const void *s1, size_t n);
+void	ft_putchar_fd(char z, int fd);
+void	ft_putstr_fd(char *str, size_t fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putendl_fd(char *str, size_t fd);
+char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char));
+void	ft_striter(char *s, void (*f)(unsigned	int, char *));
+char	*ft_itoa(int n);
