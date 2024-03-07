@@ -6,7 +6,7 @@
 /*   By: kuzi <kuzi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:18:30 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/07 08:42:55 by kuzi             ###   ########.fr       */
+/*   Updated: 2024/03/07 09:01:27 by kuzi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ int		ft_strlcat(char *dest, char *src, int n);
 char	*ft_strnstr(const char *str, const char *sub, int n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t num_elements, size_t element_size);
-void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memset(void *s, int c, size_t n); 
 char	*ft_strdup(const char *s1);
 void	*ft_memcpy(void *dst, const void *s1, size_t n);
 char	*ft_strdup(const char *s1);
-void	*ft_memcpy(void *dst, const void *s1, size_t n);
 void	ft_putchar_fd(char z, int fd);
 void	ft_putstr_fd(char *str, size_t fd);
 void	ft_putnbr_fd(int n, int fd);
@@ -42,4 +41,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char));
 void	ft_striter(char *s, void (*f)(unsigned	int, char *));
 char	*ft_itoa(int n);
 char    *ft_substr(char const *s, unsigned int start, size_t len);// has a problem .
-char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strjoin(char const *s1, char const *s2);// has problem..
