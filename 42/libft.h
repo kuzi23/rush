@@ -6,7 +6,7 @@
 /*   By: kuzi <kuzi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:18:30 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/07 09:01:27 by kuzi             ###   ########.fr       */
+/*   Updated: 2024/03/07 09:02:45 by kuzi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *str, size_t fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char));
 void	ft_striter(char *s, void (*f)(unsigned	int, char *));
-char	*ft_itoa(int n);
+char	*ft_itoa(int n); // need a review .
 char    *ft_substr(char const *s, unsigned int start, size_t len);// has a problem .
 char    *ft_strjoin(char const *s1, char const *s2);// has problem..
