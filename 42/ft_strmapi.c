@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 14:45:08 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/05 15:01:09 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/09 15:51:48 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char))
 
 	i = 0;
 	if (!s || !f)
-		return ;
+		return (NULL);
 	res = malloc(ft_strlen(s) + 1);
 	while (s[i] != '\0')
 	{
@@ -27,4 +27,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char))
 		i++;
 	}
 	res[i] = '\0';
+	return (res);
 }

@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 20:20:42 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/02 20:30:02 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/09 15:32:36 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*str;
-	int		i;
+	char		*str;
+	size_t		i;
 
 	i = 0;
 	str = s;
