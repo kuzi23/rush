@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "ft_memchr.C": "cpp"
+        "ft_memchr.C": "cpp",
+        "random": "c"
     }
 }
