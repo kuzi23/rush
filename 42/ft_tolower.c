@@ -1,20 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ tolower.c                                      :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 13:30:33 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/02 20:37:43 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/11 10:22:46 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int z)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
-	if (z >= 65 && z <= 90)
+	if (c >= 'A' && c <= 'Z')
 	{
-		z = z - 32;
+		return (c + ('a' - 'A'));
 	}
-	return (z);
+	else
+	{
+		return (c);
+	}
 }
+
+// int	main(void)
+// {
+// 	char	test_char;
+// 	char	lowercase_char;
+
+// 	test_char = '&';
+// 	printf("Original character: %c\n", test_char);
+// 	lowercase_char = ft_tolower(test_char);
+// 	printf("Lowercase character: %c\n", lowercase_char);
+// 	return (0);
+// }
