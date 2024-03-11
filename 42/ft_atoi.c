@@ -6,9 +6,11 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:25:12 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/02 20:38:18 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/11 10:35:36 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

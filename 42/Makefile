@@ -6,9 +6,10 @@
 #    By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/09 13:59:41 by mkwizera          #+#    #+#              #
-#    Updated: 2024/03/11 09:44:38 by mkwizera         ###   ########.fr        #
+#    Updated: 2024/03/11 10:44:58 by mkwizera         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -32,4 +33,4 @@ clean:
 fclean: clean 
 	rm -f $(NAME)
 
-re: clean all                                
+re: clean all  

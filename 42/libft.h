@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:18:30 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/11 09:54:04 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/11 10:57:47 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 size_t		ft_strlen(const char *str);
 int			ft_atoi(char *str);
@@ -50,3 +51,5 @@ void		*ft_memchr(const void *s, int c, size_t n);
 char		*ft_strtrim(char const *s1, char const *set);
 void		*ft_memmove(void *dst, const void *src, size_t len);//review
 int			ft_tolower(int z);
+char		**ft_split(char const *s, char c);
+char		*ft_strtrim(char const *s1, char const *set);
