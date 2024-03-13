@@ -1,20 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ tolower.c                                      :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/02 13:30:33 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/02 20:37:43 by mkwizera         ###   ########.fr       */
+/*   Created: 2024/03/09 12:17:26 by mkwizera          #+#    #+#             */
+/*   Updated: 2024/03/09 12:53:03 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int z)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (z >= 65 && z <= 90)
+	const char	*str;
+	const char	*str2;
+	size_t		i;
+
+	str = (const char *)s1;
+	str2 = (const char *)s2;
+	i = 0;
+	while (i < n)
 	{
-		z = z - 32;
+		if (str != str2)
+		{
+			return (str[i] - str2[i]);
+		}
+		i++;
 	}
-	return (z);
+	return (0);
 }

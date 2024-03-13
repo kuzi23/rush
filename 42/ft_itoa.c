@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:21:36 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/05 20:26:35 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/09 15:46:25 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	ft_countsize(int n)
 	return (size);
 }
 
-
 char	*ft_itoa(int num)
 {
 	char	*str;
@@ -45,8 +44,9 @@ char	*ft_itoa(int num)
 		num = -1 * num;
 		digit_count++;
 	}
-	digit_count += count_digits(num);
-	if (!(str == (char *)malloc(sizeof(char) * (digit_count + 1))))
+	digit_count += ft_countsize(num);
+	str = (char *)malloc(sizeof(char) * (digit_count + 1));
+	if (!(str))
 		return (NULL);
 	str[digit_count] = '\0';
 	while (num > 0)
@@ -58,4 +58,3 @@ char	*ft_itoa(int num)
 		str[0] = '-';
 	return (str);
 }
-
