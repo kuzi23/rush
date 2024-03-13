@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:54:32 by kuzi              #+#    #+#             */
-/*   Updated: 2024/03/05 13:20:24 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/13 17:12:23 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		n = -n;
+		ft_putnbr_fd(-n, fd);
 	}
 	else if (n >= 10)
 	{

@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 07:03:34 by kuzi              #+#    #+#             */
-/*   Updated: 2024/03/09 10:09:17 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/13 20:14:31 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	while (j < len && *s != '\0')
 	{
-		new[j] = *s;
+		new[j - start] = *s;
 		s++;
 		j++;
 	}
-	new[j] = '\0';
+	new[j - start] = '\0';
 	return (new);
 }

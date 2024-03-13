@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 13:36:26 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/13 12:35:19 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/13 15:27:24 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strchr(const char *str, int c)
 		}
 		i++;
 	}
+	if (c == '\0')
+		return ((char *)&str[i]);
 	return (0);
 }
 

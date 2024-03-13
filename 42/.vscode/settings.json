@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "ft_memchr.C": "cpp",
-        "random": "c"
+        "random": "c",
+        "stdio.h": "c",
+        "unistd.h": "c"
     }
 }

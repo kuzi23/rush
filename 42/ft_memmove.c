@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 11:02:28 by kuzi              #+#    #+#             */
-/*   Updated: 2024/03/09 18:31:59 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/13 16:22:10 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	    return (dst);
     if (s >= d && s < d + len)
 	{
-		while (len > 0)
-		{
-			*d++ = *s++;
-			len--;
-		}
-	}
-	else
-	{
 		while (i < len)
 		{
 			*d++ = *s++;
 			i++;
+		}
+	}
+	else
+	{
+		while (len > 0)
+		{
+			d[len - 1] = s[len - 1];
+			len--;
 		}
 	}
 	return (d);
