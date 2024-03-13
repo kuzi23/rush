@@ -6,7 +6,7 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 12:18:30 by mkwizera          #+#    #+#             */
-/*   Updated: 2024/03/13 12:02:46 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/13 12:47:58 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,14 @@ int		ft_isprint(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int num);
 void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memcpy(void *dst, const void *s1, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memset(void *s, int c, size_t n);
+void	ft_putchar_fd(char z, int fd);
+void	ft_putendl_fd(char *str, size_t fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *str, size_t fd);
 int		**ft_split(char const *s, char c);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *s1);
@@ -41,6 +49,7 @@ size_t	ft_strlen(const char *str);
 char	*ft_strmapi(char const *s, char (*f)(unsigned	int, char));
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 char	*ft_strnstr(const char *str, const char *sub, int n);
+char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
