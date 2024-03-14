@@ -3,6 +3,7 @@
         "ft_memchr.C": "cpp",
         "random": "c",
         "stdio.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "sstream": "c"
     }
 }

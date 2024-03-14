@@ -6,52 +6,79 @@
 /*   By: mkwizera <mkwizera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 11:02:28 by kuzi              #+#    #+#             */
-/*   Updated: 2024/03/13 16:22:10 by mkwizera         ###   ########.fr       */
+/*   Updated: 2024/03/14 11:03:23 by mkwizera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*s;
-	char	*d;
+	size_t			i;
+	char			j;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	d = (char *)dst;
-	s = (char *)src;
 	i = 0;
-    if (dst == src)
-	    return (dst);
-    if (s >= d && s < d + len)
+	j = 1;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	if (!dest && !src)
+		return (NULL);
+	if (dest > src)
 	{
-		while (i < len)
-		{
-			*d++ = *s++;
-			i++;
-		}
+		j = -1;
+		d += n - 1;
+		s += n - 1;
 	}
-	else
+	while (i < n)
 	{
-		while (len > 0)
-		{
-			d[len - 1] = s[len - 1];
-			len--;
-		}
+		*d = *s;
+		d += j;
+		s += j;
+		i++;
 	}
-	return (d);
+	return (dest);
 }
 
-
-// int main() {
-//     char src[] = "Hello, world!";
-//     char dst[20]; // Make sure dst has enough space
-
-//     // Using memmove to copy overlapping memory regions
-//     //memmove(dst, src, strlen(src) + 1); // +1 to copy the null terminator
-//     ft_memmove(dst, src, ft_strlen(src) + 1);
-//     // Printing the content of the destination array
-//     printf("Destination string after memmove: %s\n", dst);
-
-//     return 0;
+// int		main(int argc, const char *argv[])
+// {
+// 	char	src[] = "lorem ipsum dolor sit amet";
+// 	char	*dest;
+// 	int		arg;
+// 	dest = src + 1;
+// 	alarm(5);
+// 	if (argc == 1)
+// 		return (0);
+// 	else if ((arg = atoi(argv[1])) == 1)
+// 	{
+// 		if (dest != ft_memmove(dest, "consectetur", 5))
+// 			write(1, "dest's adress was not returned\n", 31);
+// 		write(1, dest, 22);
+// 	}
+// 	else if (arg == 2)
+// 	{
+// 		if (dest != ft_memmove(dest, "con\0sec\0\0te\0tur", 10))
+// 			write(1, "dest's adress was not returned\n", 31);
+// 		write(1, dest, 22);
+// 	}
+// 	else if (arg == 3)
+// 	{
+// 		if (dest != ft_memmove(dest, src, 8))
+// 			write(1, "dest's adress was not returned\n", 31);
+// 		write(1, dest, 22);
+// 	}
+// 	else if (arg == 4)
+// 	{
+// 		if (src != ft_memmove(src, dest, 8))
+// 			write(1, "dest's adress was not returned\n", 31);
+// 		write(1, dest, 22);
+// 	}
+// 	else if (arg == 5)
+// 	{
+// 		if (src != ft_memmove(src, dest, 0))
+// 			write(1, "dest's adress was not returned\n", 31);
+// 		write(1, dest, 22);
+// 	}
+// 	return (0);
 // }
